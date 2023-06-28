@@ -459,18 +459,135 @@
 //   // "Лог після виклику fnA"
 
 
-function bar() {
-    console.log("bar");
-  }
+// function bar() {
+//     console.log("bar");
+//   }
   
-  function baz() {
-    console.log("baz");
-  }
+//   function baz() {
+//     console.log("baz");
+//   }
   
-  function foo() {
-    console.log("foo");
-    bar();
-    baz();
-  }
+//   function foo() {
+//     console.log("foo");
+//     bar();
+//     baz();
+//   }
   
-  foo();
+//   foo();
+
+
+/**
+  |============================
+  | Дз модуль 2
+  |============================
+*/
+
+// 1 завдання
+
+// function checkAge(age) {
+  
+//   if (age >= 18) { // Change this line
+    
+//     return "You are an adult";
+//   }
+
+//   return "You are a minor";
+  
+// }
+// console.log(checkAge(8))
+
+// checkAge(20)
+// checkAge(8)
+// checkAge(14)
+// checkAge(38)
+
+// 2 завдання
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   // Change code below this line
+
+
+//   if (password === ADMIN_PASSWORD) {
+//     return "Welcome!";
+//   }  
+//     return "Access denied, wrong password!";
+  
+//   // Change code above this line
+// }
+// console.log(checkPassword("jqueryismyjam"))
+
+// checkPassword("mangohackzor")
+// checkPassword("polyhax")
+// checkPassword("jqueryismyjam")
+
+// 3 завдання
+// function checkStorage(available, ordered) {
+//   // Change code below this line
+
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   } if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   } 
+//     return "The order is accepted, our manager will contact you";
+
+//   // Change code above this line
+// }
+// console.log(checkStorage(70, 0))
+// checkStorage(100, 50)
+// checkStorage(100, 130)
+// checkStorage(70, 0)
+// checkStorage(200, 20)
+// checkStorage(200, 250)
+// checkStorage(150, 0)
+
+// 4 завдання
+// const fruits = ["apple", "plum", "pear", "orange"]
+// console.log(fruits)
+
+// 5 завдання
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// // Change code below this line
+// const firstElement = fruits[0];
+// const secondElement = fruits[0 + 1];
+// const lastElement = fruits[fruits.length - 1];
+
+// console.log(secondElement)
+
+// 6 завдання
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// // Write your code under this line
+// fruits[1] = "peach";
+// fruits[fruits.length - 1] = "banana";
+// console.log(fruits)
+
+// 7 завдання
+// const fruits = ["apple", "peach", "pear", "banana"];
+
+// // Change code below this line
+// const fruitsArrayLength = fruits.length
+// console.log(fruitsArrayLength)
+
+// 8 завдання
+// const fruits = ["apple", "peach", "pear", "banana"];
+
+// // Change code below this line
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+
+// console.log(lastElement)
+
+// 9 завдання
+function getExtremeElements(array) {
+  // Change code below this line
+  const arrayLength =  [array[0], array[array.length - 1]];
+  return arrayLength
+
+  // Change code above this line
+}
+console.log(getExtremeElements(["Earth", "Mars", "Venus"]))
+getExtremeElements([1, 2, 3, 4, 5])
+getExtremeElements(["Earth", "Mars", "Venus"])
+getExtremeElements(["apple", "peach", "pear", "banana"])
