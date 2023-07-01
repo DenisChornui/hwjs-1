@@ -1,7 +1,6 @@
 // Масиви
 // const clients = ["Mango", "Poly", "Ajax"];
 
-
 // // Зазначаючи в дужках індекс елемента, ми отримуємо його значення
 // console.log(clients[0]); // Mango
 // console.log(clients[1]); // Poly
@@ -235,7 +234,6 @@
 // console.log(oldClients); // ["Mango", "Ajax", "Poly", "Kiwi"]
 // console.log(newClients); // ["Monkong", "Singu"]
 
-
 /**
   |============================
   | Функції
@@ -247,85 +245,79 @@
 //     // Тіло функції
 //     console.log("Це лог на момент виклику функції multiply");
 //   }
-  
+
 //   // 2. Виклики функції multiply
 //   multiply(); // 'Це лог на момент виклику функції multiply'
 //   multiply(); // 'Це лог на момент виклику функції multiply'
 //   multiply(); // 'Це лог на момент виклику функції multiply'
 
-
 // // 1. Оголошення параметрів x, y, z
 // function multiply(x, y, z) {
 //     console.log(`Результат множення дорівнює ${x * y * z}`);
 //   }
-  
+
 //   // 2. Передача аргументів
 //   multiply(2, 3, 5); // Результат множення дорівнює 30
 //   multiply(4, 8, 12); // Результат множення дорівнює 384
 //   multiply(17, 6, 25); // Результат множення дорівнює 2550
 
-
 // function multiply(x, y, z) {
 //     console.log("Код до return виконується звичайним чином");
-  
+
 //     // Повертаємо результат виразу множення
 //     return x * y * z;
-  
+
 //     console.log("Цей лог ніколи не виконається, він стоїть після return");
 //   }
-  
+
 //   // Результат роботи функції можна зберегти у змінну
 //   let result = multiply(2, 3, 5);
 //   console.log(result); // 30
-  
+
 //   result = multiply(4, 8, 12);
 //   console.log(result); // 384
-  
+
 //   result = multiply(17, 6, 25);
 //   console.log(result); // 2550
-
 
 // function multiply(x, y, z) {
 //     console.log(`Результат множення дорівнює ${x * y * z}`);
 //   }
-  
+
 //   console.log("Лог до виклику функції multiply");
 //   multiply(2, 3, 5); // Результат множення дорівнює 30
 //   console.log("Лог після виклику функції multiply");
-  
+
 //   // Послідовність логів в консолі
 //   // "Лог до виклику функції multiply"
 //   // "Результат множення дорівнює 30"
 //   // "Лог після виклику функції multiply"
 
-
 // function count(countFrom = 0, countTo = 10, step = 1) {
 //     console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
-  
+
 //     for (let i = countFrom; i <= countTo; i += step) {
 //       console.log(i);
 //     }
 //   }
-  
+
 //   count(1, 5); // countFrom = 1, countTo = 5, step = 1
 //   count(2); // countFrom = 2, countTo = 10, step = 1
 //   count(); // countFrom = 0, countTo = 10, step = 1
 
-
 // function multiply() {
 //     let total = 1;
-  
+
 //     for (const argument of arguments) {
 //       total *= argument;
 //     }
-  
+
 //     return total;
 //   }
-  
+
 //   console.log(multiply(1, 2, 3)); //  6
 //   console.log(multiply(1, 2, 3, 4)); //  24
 //   console.log(multiply(1, 2, 3, 4, 5)); //  120
-
 
 // function withdraw(amount, balance) {
 //     if (amount === 0) {
@@ -336,11 +328,10 @@
 //       console.log("Операція зняття коштів проведена успішно");
 //     }
 //   }
-  
+
 //   withdraw(0, 300); // "Для проведення операції введіть суму більшу за нуль"
 //   withdraw(500, 300); // "Недостатньо коштів на рахунку"
 //   withdraw(100, 300); // "Операція зняття коштів проведена успішно"
-
 
 // function withdraw(amount, balance) {
 //     // Якщо умова виконується, викликається console.log
@@ -349,7 +340,7 @@
 //       console.log("Для проведення операції введіть суму більшу за нуль");
 //       return;
 //     }
-  
+
 //     // Якщо умова першого if не виконалась, його тіло пропускається
 //     // та інтерпретатор доходе до другого if.
 //     // Якщо умова виконується, викликається console.log і вихід із функції.
@@ -358,16 +349,15 @@
 //       console.log("Недостатньо коштів на рахунку");
 //       return;
 //     }
-  
+
 //     // Якщо жоден із попередніх if не виконався,
 //     // інтерпретатор доходить до цього коду і виконує його.
 //     console.log("Операція зняття коштів проведена");
 //   }
-  
+
 //   withdraw(0, 300); // "Для проведення операції введіть суму більшу за нуль"
 //   withdraw(500, 300); // "Недостатньо коштів на рахунку"
 //   withdraw(100, 300); // "Операція зняття коштів проведена"
-
 
 // // ❌ Помилка! Не працює виклик до оголошення
 // // multiply(1, 2, 3);
@@ -378,7 +368,6 @@
 
 // // ✅ Працює виклик після оголошення
 // multiply(4, 5, 6);
-
 
 // область видимості
 // const globalValue = 10;
@@ -397,23 +386,22 @@
 //   }
 // }
 
-
 // function foo() {
 //     const a = 20;
 //     console.log(a); // 20
-  
+
 //     for (let i = 0; i < 5; i++) {
 //       console.log(a); // 20
-  
+
 //       if (i === 2) {
 //         console.log(a); // 20
 //       }
 //     }
 //   }
-  
+
 //   // ❌ Помилка! Змінна a - недоступна у глобальній області видимості
 //   console.log(a);
-  
+
 //   for (let i = 0; i < 3; i++) {
 //     // ❌ Помилка! Змінна a - недоступна в цій області видимості
 //     console.log(a);
@@ -422,59 +410,56 @@
 // for (let i = 0; i < 5; i++) {
 //     const a = 20;
 //     console.log(a); // 20
-  
+
 //     if (i === 2) {
 //       const b = 30;
 //       console.log(a); // 20
 //       console.log(b); // 30
 //     }
-  
+
 //     if (i === 3) {
 //       console.log(a); // 20
-  
+
 //       // ❌ Помилка! Змінна b - недоступна в цій області видимості
 //       console.log(b);
 //     }
 //   }
-
 
 // function fnA() {
 //     console.log("Лог всередині функції fnA до виклику fnB");
 //     fnB();
 //     console.log("Лог всередині функції fnA після виклику fnB");
 //   }
-  
+
 //   function fnB() {
 //     console.log("Лог всередині функції fnB");
 //   }
-  
+
 //   console.log("Лог до виклику fnA");
 //   fnA();
 //   console.log("Лог після виклику fnA");
-  
+
 //   // "Лог до виклику fnA"
 //   // "Лог всередині функції fnA до виклику fnB"
 //   // "Лог всередині функції fnB"
 //   // "Лог всередині функції fnA після виклику fnB"
 //   // "Лог після виклику fnA"
 
-
 // function bar() {
 //     console.log("bar");
 //   }
-  
+
 //   function baz() {
 //     console.log("baz");
 //   }
-  
+
 //   function foo() {
 //     console.log("foo");
 //     bar();
 //     baz();
 //   }
-  
-//   foo();
 
+//   foo();
 
 /**
   |============================
@@ -485,14 +470,14 @@
 // 1 завдання
 
 // function checkAge(age) {
-  
+
 //   if (age >= 18) { // Change this line
-    
+
 //     return "You are an adult";
 //   }
 
 //   return "You are a minor";
-  
+
 // }
 // console.log(checkAge(8))
 
@@ -506,12 +491,11 @@
 //   const ADMIN_PASSWORD = "jqueryismyjam";
 //   // Change code below this line
 
-
 //   if (password === ADMIN_PASSWORD) {
 //     return "Welcome!";
-//   }  
+//   }
 //     return "Access denied, wrong password!";
-  
+
 //   // Change code above this line
 // }
 // console.log(checkPassword("jqueryismyjam"))
@@ -528,7 +512,7 @@
 //     return "Your order is empty!";
 //   } if (ordered > available) {
 //     return "Your order is too large, not enough goods in stock!";
-//   } 
+//   }
 //     return "The order is accepted, our manager will contact you";
 
 //   // Change code above this line
@@ -580,14 +564,135 @@
 // console.log(lastElement)
 
 // 9 завдання
-function getExtremeElements(array) {
-  // Change code below this line
-  const arrayLength =  [array[0], array[array.length - 1]];
-  return arrayLength
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   const arrayLength =  [array[0], array[array.length - 1]];
+//   return arrayLength
 
-  // Change code above this line
+//   // Change code above this line
+// }
+// console.log(getExtremeElements(["Earth", "Mars", "Venus"]))
+// getExtremeElements([1, 2, 3, 4, 5])
+// getExtremeElements(["Earth", "Mars", "Venus"])
+// getExtremeElements(["apple", "peach", "pear", "banana"])
+
+// 10 завдання
+// function splitMessage(message, delimiter) {
+//   let words
+//   // Change code below this line
+//   // console.log(message.split(delimiter));
+//   words === message.split(delimiter)
+//   // Change code above this line
+
+//   return words;
+
+// }
+
+// splitMessage("Mango hurries to the train", " ")
+// splitMessage("Mango", "")
+// splitMessage("best_for_week", "_")
+
+// 11 завдання
+// function calculateEngravingPrice(message, pricePerWord) {
+//   // Change code below this line
+
+// return message.split(" ").length * pricePerWord
+//   // Change code above this line
+// }
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 20))
+// calculateEngravingPrice("JavaScript is in my blood", 10)
+// calculateEngravingPrice("JavaScript is in my blood", 20)
+// calculateEngravingPrice("Web-development is creative work", 40)
+// calculateEngravingPrice("Web-development is creative work", 20)
+
+// 12 завдання
+// function makeStringFromArray(array, delimiter) {
+//   let string;
+//   // Change code below this line
+// string = array.join(delimiter);
+
+//   // Change code above this line
+//   return string;
+// }
+// console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "))
+// makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ")
+// makeStringFromArray(["M", "a", "n", "g", "o"], "")
+// makeStringFromArray(["top", "picks", "for", "you"], "_")
+
+// 13 завдання
+// function slugify(title) {
+//   // Change code below this line
+
+// return title.toLowerCase().split(' ').join('-')
+
+//   // Change code above this line
+// }
+// console.log(slugify("Arrays for begginers"))
+// slugify("Arrays for begginers")
+// slugify("English for developer")
+// slugify("Ten secrets of JavaScript")
+// slugify("How to become a JUNIOR developer in TWO WEEKS")
+
+// // 14 завдання
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, 4);
+// const lastThreeEls = fruits.slice( -3);
+
+// console.log(firstTwoEls)
+// console.log(nonExtremeEls)
+// console.log(lastThreeEls)
+
+// 15 завдання
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients); // Change this line
+// console.log(allClients)
+
+// 16 завдання
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Change code below this line
+
+// const result = firstArray.concat(secondArray).length > maxLength ? firstArray.concat(secondArray).slice(0, maxLength) : firstArray.concat(secondArray)
+// return result
+//   // Change code above this line
+// }
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0))
+// makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)
+// makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)
+// makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)
+
+// 17 завдання
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) { // Change this line
+//   console.log(i);
+// }
+
+// 18 завдання
+// function calculateTotal(number) {
+//   // Change code below this line
+//   let total = 0;
+//   for (let i = 1; i <= number; i += 1) {
+//     total += i;
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+// console.log(calculateTotal(3));
+
+// 19 завдання
+const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+for (let i = 0; i < 4; i += 1) { // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
 }
-console.log(getExtremeElements(["Earth", "Mars", "Venus"]))
-getExtremeElements([1, 2, 3, 4, 5])
-getExtremeElements(["Earth", "Mars", "Venus"])
-getExtremeElements(["apple", "peach", "pear", "banana"])
