@@ -473,3 +473,639 @@
 
 // console.log(red); // "200"
 // console.log(colors); // [255, 100] 
+
+/**
+  |============================
+  | HW 3
+  |============================
+*/
+
+// 1завдання
+// const apartment = {
+//   imgUrl : "https://via.placeholder.com/640x480",
+//   descr : "Spacious apartment in the city center",
+//   rating : 4,
+//   price : 2153,
+//   tags : ["premium", "promoted", "top"]
+// };
+// console.log(apartment)
+
+// 2 завдання
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com"
+//   }
+// };
+// console.log(apartment)
+
+// 3 завдання
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+// };
+
+// // Change code below this line
+// const aptRating = apartment.rating;
+// const aptDescr = apartment.descr;
+// const aptPrice = apartment.price;
+// const aptTags = apartment.tags;
+// // Change code above this line
+// console.log(aptRating)
+// console.log(aptDescr)
+// console.log(aptPrice)
+// console.log(aptTags)
+
+// 4 завдання
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+// // Change code below this line
+// const ownerName = apartment.owner.name;
+// const ownerPhone = apartment.owner.phone;
+// const ownerEmail = apartment.owner.email;
+// const numberOfTags = apartment.tags.length;
+// const firstTag = apartment.tags[0];
+// const lastTag = apartment.tags[2];
+// // Change code above this line
+// console.log(ownerName)
+// console.log(ownerPhone)
+// console.log(ownerEmail)
+// console.log(numberOfTags)
+// console.log(firstTag)
+// console.log(lastTag)
+
+// 5 завдання
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+// };
+
+// // Change code below this line
+// const aptRating = apartment["rating"];
+// const aptDescr = apartment["descr"];
+// const aptPrice = apartment["price"];
+// const aptTags = apartment["tags"];
+// // Change code above this line
+// console.log(aptRating)
+// console.log(aptDescr)
+// console.log(aptPrice)
+// console.log(aptTags)
+
+// 6 завдання
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+// // Change code below this line
+// apartment.price = 5000;
+// apartment.rating = 4.7;
+// apartment.owner.name = "Henry Sibola";
+// apartment.tags.push("trusted");
+
+// console.log(apartment)
+
+// 7 завдання
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+// // Change code below this line
+// apartment.area = 60;
+// apartment.rooms = 3;
+// apartment.location 
+// apartment.location = {}
+// apartment.location.country = "Jamaica";
+// apartment.location.city = "Kingston";
+// console.log(apartment)
+
+// 8 завдання
+// const name = "Repair Droid";
+// const price = 2500;
+// const image = "https://via.placeholder.com/640x480";
+// const tags = ["on sale", "trending", "best buy"];
+
+// const product = {
+//   // Change code below this line
+//   // Change code above this line
+//   name,
+//   price,
+//   image,
+//   tags,
+// };
+// console.log(product.image)
+
+// 9 завдання
+// const emailInputName = "email";
+// const passwordInputName = "password";
+
+// const credentials = {
+//   // Change code below this line
+// [emailInputName]: "henry.carter@aptmail.com",
+// [passwordInputName]: "jqueryismyjam",
+
+
+//   // Change code above this line
+// };
+// console.log(credentials.email)
+
+// 10 завдання
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for (const key in apartment) {
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+// console.log(keys)
+// console.log(values)
+
+// 11 завдання
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   // Change code below this line
+// if (apartment.hasOwnProperty(key)) {
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+//   // Change code above this line
+// }
+// console.log(keys)
+
+// 12 завдання
+// function countProps(object) {
+//   let propCount = 0;
+//   const keys = Object.keys(object)
+//   // Change code below this line
+// for (let key of keys) {
+//   if (object.hasOwnProperty(key)) {
+//     propCount += 1;
+//   }
+// }
+//   // Change code above this line
+//   return propCount;
+// }
+
+// countProps({})
+// countProps({ name: "Mango", age: 2 })
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })
+// console.log(countProps({}))
+// console.log(countProps({ name: "Mango", age: 2 }))
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }))
+
+// 13 завдання
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// for (const key of keys) {
+  
+//   values.push(apartment[key]);
+
+// }
+// console.log(values)
+
+// 14 завдання
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = 0;
+//   const keys = Object.keys(object)
+
+//   return propCount = keys.length;
+//   // Change code above this line
+// }
+
+// countProps({})
+// countProps({ name: "Mango", age: 2 })
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })
+// console.log(countProps({}))
+// console.log(countProps({ name: "Mango", age: 2 }))
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }))
+
+// 15 завдання
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// console.log(keys)
+// console.log(values)
+
+// 16 завдання
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+// const values = Object.values(salaries)
+//   // Change code above this line
+//   for (const value of values) {
+//     totalSalary += value
+//   }
+//   return totalSalary;
+// }
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }))
+// countTotalSalary({})
+// countTotalSalary({ mango: 100, poly: 150, alfred: 80 })
+// countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 })
+
+// 17 завдання
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (const color of colors) {
+//   hexColors.push(color.hex)
+//   rgbColors.push(color.rgb)
+// }
+// console.log(hexColors)
+// console.log(rgbColors)
+
+// 18 завдання
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+// for (const iteam of products) {
+//   if (iteam.name === productName)
+//   return iteam.price
+// }
+
+// return null;
+//   // Change code above this line
+// }
+// console.log(getProductPrice("Engine"))
+// getProductPrice("Scanner")
+
+// 19 завдання
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   const propItems = []
+// for (const product of products) {
+//   if (product.hasOwnProperty(propName)) {
+//     propItems.push(product[propName])
+//   }
+// }
+// return propItems
+
+//   // Change code above this line
+// }
+// getAllPropValues("quantity")
+// getAllPropValues("price")
+// getAllPropValues("name")
+// getAllPropValues("category")
+// console.log(getAllPropValues("quantity"))
+
+// 20 завдання
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+//   let totalPrice = 0
+// for (const product of products) {
+//   if (product.name === productName) {
+//     totalPrice = (product.price * product.quantity)
+//   }
+// }
+// return totalPrice
+
+//   // Change code above this line
+// }
+// calculateTotalPrice("Droid")
+// calculateTotalPrice("Radar")
+// calculateTotalPrice("Blaster")
+// console.log(calculateTotalPrice("Blaster"))
+
+// 21 завдання
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// // const yesterday = highTemperatures.yesterday;
+// // const today = highTemperatures.today;
+// // const tomorrow = highTemperatures.tomorrow;
+// const {  yesterday, today, tomorrow} = highTemperatures
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+// console.log(meanTemperature)
+
+// 22 завдання
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// const { 
+//   yesterday,
+//   today,
+//   tomorrow,
+//   icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// } = highTemperatures;
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// 23 завдання
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// const {
+//   yesterday: highYesterday,
+//   today: highToday,
+//   tomorrow: highTomorrow,
+//   icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
+// } = highTemperatures;
+
+// // Change code above this line
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+// console.log(meanTemperature)
+
+// 24 завдання
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// for (const {hex , rgb} of colors) {
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+// }
+// console.log(hexColors)
+// console.log(rgbColors)
+
+// 25 завдання
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+// const {
+//   today: {
+//   high: highToday,
+//   low: lowToday,
+//   icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// },
+//   tomorrow: {
+//     high: highTomorrow,
+//     low: lowTomorrow,
+//     icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+//   }} = forecast
+
+// 26 завдання
+// Change code below this line
+// function calculateMeanTemperature(forecast) {
+//   const { today: { low: todayLow, high: todayHigh}, tomorrow: { low: tomorrowLow, high: tomorrowHigh} } = forecast
+
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+  
+// }
+// calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} })
+// console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }))
+
+// 27 завдання
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+// console.log(worstScore)
+
+// 28 завдання
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+// console.log(allScores)
+// console.log(bestScore)
+// console.log(worstScore)
+
+// 29 завдання
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = {...defaultSettings, ...overrideSettings};
+// console.log(finalSettings)
+
+// 30 завдання
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+// const newMakeTask = {category, priority, ...data, completed}
+// return newMakeTask
+//   // Change code above this line
+// }
+
+// makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }))
+
+// 31 завдання
+// Change code below this line
+// function add(...args) {
+//   let sum = 0
+//   // Change code above this line
+//   for (const item of args) {
+//     sum += item;
+//   }
+//   return sum;
+// }
+// console.log(add(12, 4, 11, 48))
+// add(12, 4, 11, 48)
+
+// 32 завдання
+// Change code below this line
+// function addOverNum(firstItem, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (firstItem < arg) {
+//       total += arg;
+//       }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+
+// addOverNum(10, 12, 4, 11, 48, 10, 8)
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8))
+
+// 33 завдання
+// Change code below this line
+// function findMatches(firstArr, ...args) {
+//   const matches = []; // Don't change this line
+// for (const arg of args) {
+//   if (firstArr.includes(arg)) {
+//     matches.push(arg)
+//   }
+// }
+//   // Change code above this line
+//   return matches;
+// }
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7))
+// findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7)
+
+// 34 завдання
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+//   // Change code above this line
+// };
+// bookShelf.getBooks()
+// bookShelf.addBook("Haze")
+// bookShelf.removeBook("Red sunset")
+// bookShelf.updateBook("Sands of dune", "Dune")
+
+// console.log(bookShelf.updateBook("Sands of dune", "Dune"))
+
+// 35 завдання
+const bookShelf = {
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
+  updateBook(oldName, newName) {
+    // Change code below this line
+const idx = this.books.indexOf(oldName);
+this.books.splice(idx, 1, newName)
+
+
+    // Change code above this line
+    return this.books
+    
+  },
+  
+};
+
+bookShelf.updateBook("The last kingdom", "Dune")
+bookShelf.updateBook("Haze", "Dungeon chronicles")
+console.log(bookShelf.updateBook("The last kingdom", "Dune"))
+console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"))
+

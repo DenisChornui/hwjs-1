@@ -690,9 +690,195 @@
 // console.log(calculateTotal(3));
 
 // 19 завдання
-const fruits = ['apple', 'plum', 'pear', 'orange'];
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
 
-for (let i = 0; i < 4; i += 1) { // Change this line
-  const fruit = fruits[i]; // Change this line
-  console.log(fruit);
-}
+// for (let i = 0; i < 4; i += 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+// 20 завдання
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+// for (let i = 0; i < order.length; i += 1)
+// total += order[i]
+//   // Change code above this line
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]))
+// console.log(calculateTotalPrice([164, 48, 291]))
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]))
+// console.log(calculateTotalPrice())
+
+// 21 завдання
+// function findLongestWord(string) {
+//   // Change code below this line
+// return string.split(' ').reduce((a, b) => (b.length > a.length) ? b : a);
+
+//   // Change code above this line
+// }
+// // console.log(longWord)
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+
+// 22 завдання
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+// for (let i = min; i <= max; i += 1) {
+//   numbers.push(i)
+// }
+//   // Change code above this line
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(29, 34))
+// createArrayOfNumbers(1, 3)
+
+// 23 завдання
+// function filterArray(numbers, value) {
+//   // Change code below this line
+// const bigestNumber = [];
+// for (const item of numbers) {
+//   if (item > value) {
+//     bigestNumber.push(item)
+//   }
+// }
+// console.log(bigestNumber)
+//  // Change code above this line
+// }
+
+// filterArray([12, 24, 8, 41, 76], 20)
+
+// 24 завдання
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return fruits.includes(fruit); // Change this line
+// }
+// console.log(checkFruit("plum"))
+// checkFruit("mandarin")
+// checkFruit("plum") 
+
+// 25 завдання
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+// const array3 = []
+// for (let i = 0; i < array1.length; i += 1) {
+//   if (array2.includes(array1[i])) {
+//     array3.push(array1[i])
+//   }
+// }
+// return array3
+//  // Change code above this line
+// }
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]))
+// getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40])
+
+// 26 завдання
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+
+//   for (const item of order) {
+//     total += item
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]))
+// calculateTotalPrice([412, 371, 94, 63, 176])
+
+// 27 завдання
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+  
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+// console.log(filterArray([12, 24, 8, 41, 76], 20))
+// filterArray([12, 24, 8, 41, 76], 20)
+
+// 28 завдання
+// Change code below this line
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 8;
+// const d = 12 % 7;
+// const e = 8 % 6;
+
+// console.log(e)
+
+// 29 завдання
+// function getEvenNumbers(start, end) {
+//   // Change code below this line
+
+// const number = [];
+// for (let i = start; i <= end; i +=1) {
+//   if (i % 2 === 0) {
+//     number.push(i)
+//   }
+// }
+// return number
+//    // Change code above this line
+//  }
+// console.log(getEvenNumbers(3, 11))
+//  getEvenNumbers(3, 11)
+
+// 30 завдання
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+    
+//   }
+// }
+// console.log(number)
+
+// 31 завдання
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       return i
+//     }
+//   }
+
+// }
+// console.log(findNumber(16, 35, 7))
+// findNumber(2, 6, 5)
+// findNumber(16, 35, 7)
+
+// 32 завдання
+// function includes(array, value) {
+//   // Change code below this line
+// for (let i = 0; i < array.length; i += 1) {
+//   if (array[i] === value) {
+//     return true;
+//   }
+// }
+// return false
+//   // Change code above this line
+// }
+// console.log(includes(["apple", "plum", "pear", "orange"], "plum"))
+// includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
+// includes(["apple", "plum", "pear", "orange"], "plum")
