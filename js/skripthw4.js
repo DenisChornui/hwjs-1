@@ -480,3 +480,42 @@
 //   .sort((a, b) => a.localeCompare(b));
 
 // console.log(uniqueSortedCourses); // ['біологія', 'інформатика', 'література', 'математика', 'фізика']
+
+/**
+  |============================
+  | HW - 4
+  |============================
+*/
+
+// 1 завдання
+// function makePizza() {
+//   return "Your pizza is being prepared, please wait.";
+// }
+// // Change code below this line
+
+// const result = makePizza();
+// const pointer = makePizza;
+// console.log(result)
+// console.log(pointer)
+
+// 2 завдання
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+// function makeMessage(pizzaName, callback) {
+//   return callback(pizzaName);
+  
+// }
+
+// makeMessage("Royal Grand", makePizza)
+// makeMessage("Ultracheese", deliverPizza)
+// console.log(makeMessage("Royal Grand", makePizza))
+// console.log(makeMessage("Ultracheese", deliverPizza))
+
+// 3 завдання
