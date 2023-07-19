@@ -519,3 +519,276 @@
 // console.log(makeMessage("Ultracheese", deliverPizza))
 
 // 3 завдання
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+
+// makePizza("Ultracheese", function eatPizza(pizzaName) {
+//   console.log(`Eating pizza ${pizzaName}`)
+// });
+
+// 4 завдання
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     for (const pizza of this.pizzas) {
+//       if (pizza === pizzaName) {
+//         console.log(pizza);
+//         return onSuccess
+//       }
+//     }
+//     return onError(`There is no pizza with a name ${pizzaName} in the assortment.`)
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError))
+
+// 5 завдання
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+
+//   orderedItems.forEach(function (number, index) {
+//     totalPrice += number;
+//   })
+//   // Change code above this line
+// return totalPrice
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]))
+// calculateTotalPrice([12, 85, 37, 4])
+// calculateTotalPrice([164, 48, 291])
+// calculateTotalPrice([412, 371, 94, 63, 176])
+
+// 6 завдання
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+//   numbers.forEach(function (number, index) {
+//     if (number > value) {
+//       filteredNumbers.push(number)
+//     }
+
+//   })
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// filterArray([1, 2, 3, 4, 5], 3)
+// console.log(filterArray([1, 2, 3, 4, 5], 3))
+
+// 7 завдання
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+
+
+//   firstArray.forEach(function (number, index) {
+  
+//     if(secondArray.includes(number)) {
+//       commonElements.push(number)
+//     }
+//   });
+
+//   // firstArray.forEach((number) => {
+//   //   if (secondArray.includes(number)) {
+//   //     commonElements.push(number);
+//   //   }
+//   // });
+
+//   return commonElements;
+//   // Change code above this line
+// }
+// getCommonElements([1, 2, 3], [2, 4])
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]))
+// getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])
+
+// 8 завдання
+// Change code below this line
+
+// function calculateTotalPrice(quantity, pricePerItem) {
+//   // Change code above this line
+//   return quantity * pricePerItem;
+// }
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+//   return quantity * pricePerItem;
+// }
+// calculateTotalPrice(5, 100)
+// console.log(calculateTotalPrice(5, 100))
+
+// 9 завдання
+// Change code below this line
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+// ;
+// // Change code above this line
+// calculateTotalPrice(5, 100)
+// console.log(calculateTotalPrice(5, 100))
+
+// 10 завдання
+// Change code below this line
+// const calculateTotalPrice = orderedItems => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach(item => {
+//     totalPrice += item;
+//   }
+    
+// )
+  
+
+//   return totalPrice;
+// }
+// // Change code above this line
+// calculateTotalPrice([12, 85, 37, 4])
+// console.log(calculateTotalPrice([12, 85, 37, 4]))
+
+// 11 завдання
+// Change code below this line
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach(number => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3))
+// filterArray([1, 2, 3, 4, 5], 3)
+
+// 12 завдання
+// Change code below this line
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach(element => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Change code above this line
+//   return commonElements;
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]))
+// getCommonElements([1, 2, 3], [2, 4])
+
+// 13 завдання
+// const changeEven = (numbers, value) => {
+//   // Change code below this line
+//   const newArr = [];
+//   numbers.forEach(number => {
+//     if (number % 2 === 0) {
+//       newArr.push(number + value)
+//     } else {
+//       newArr.push(number);
+//     }
+//   })
+//   return newArr
+// }
+// console.log(changeEven([17, 24, 68, 31, 42], 100))
+// changeEven([17, 24, 68, 31, 42], 100)
+
+// 14 завдання
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets.map(planets => planets.length);
+// console.log(planetsLengths)
+
+// 15 завдання
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const titles = books.map(book => book.title);
+// console.log(titles)
+
+// 16 завдання
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism"],
+//   },
+// ];
+// // Change code below this line
+
+// const genres = books.flatMap(book => book.genres);
+// console.log(genres)
+
+// 17 завдання
+// Change code below this line
+// const getUserNames = users => {
+//     return users.map(user => user.name)
+
+// };
+// // Change code above this line
+
+// 18 завдання
+// Change code below this line
+// const getUserEmails = users => {
+//     return users.map(user => user.email)
+
+// };
+// // Change code above this line
+
+// 19 завдання
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Change code below this line
+
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+// const oddNumbers = numbers.filter(number => number % 2 !== 0);
+// console.log(evenNumbers)
+// console.log(oddNumbers)
